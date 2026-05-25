@@ -32,6 +32,7 @@ def load_history():
     """Returns the chat history list matching frontend property names."""
     return {"status": "success", "history": chat_history}
 
+
 @app.post("/chat/message")
 def send_message(payload: MessagePayload):
     """Receives a user message, stores it, and returns a response matching the UI."""
